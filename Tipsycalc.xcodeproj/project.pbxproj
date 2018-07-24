@@ -12,8 +12,7 @@
 		D4EB4F272107707E00E1579D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EB4F252107707E00E1579D /* Main.storyboard */; };
 		D4EB4F292107707F00E1579D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4EB4F282107707F00E1579D /* Assets.xcassets */; };
 		D4EB4F2C2107707F00E1579D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EB4F2A2107707F00E1579D /* LaunchScreen.storyboard */; };
-		D4EB4F372107707F00E1579D /* TipsycalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB4F362107707F00E1579D /* TipsycalcTests.swift */; };
-		D4EB4F422107707F00E1579D /* TipsycalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB4F412107707F00E1579D /* TipsycalcUITests.swift */; };
+		D4EB4F53210778CD00E1579D /* TipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB4F52210778CD00E1579D /* TipModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,8 @@
 		D4EB4F2B2107707F00E1579D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4EB4F2D2107707F00E1579D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4EB4F322107707F00E1579D /* TipsycalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsycalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4EB4F362107707F00E1579D /* TipsycalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsycalcTests.swift; sourceTree = "<group>"; };
-		D4EB4F382107707F00E1579D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4EB4F3D2107707F00E1579D /* TipsycalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsycalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4EB4F412107707F00E1579D /* TipsycalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsycalcUITests.swift; sourceTree = "<group>"; };
-		D4EB4F432107707F00E1579D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4EB4F52210778CD00E1579D /* TipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +73,10 @@
 		D4EB4F152107707E00E1579D = {
 			isa = PBXGroup;
 			children = (
+				D4EB4F51210770A700E1579D /* Controller */,
+				D4EB4F502107709800E1579D /* View */,
+				D4EB4F4F2107708700E1579D /* Model */,
 				D4EB4F202107707E00E1579D /* Tipsycalc */,
-				D4EB4F352107707F00E1579D /* TipsycalcTests */,
-				D4EB4F402107707F00E1579D /* TipsycalcUITests */,
 				D4EB4F1F2107707E00E1579D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				D4EB4F212107707E00E1579D /* AppDelegate.swift */,
-				D4EB4F232107707E00E1579D /* ViewController.swift */,
 				D4EB4F252107707E00E1579D /* Main.storyboard */,
 				D4EB4F282107707F00E1579D /* Assets.xcassets */,
 				D4EB4F2A2107707F00E1579D /* LaunchScreen.storyboard */,
@@ -107,22 +103,27 @@
 			path = Tipsycalc;
 			sourceTree = "<group>";
 		};
-		D4EB4F352107707F00E1579D /* TipsycalcTests */ = {
+		D4EB4F4F2107708700E1579D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D4EB4F362107707F00E1579D /* TipsycalcTests.swift */,
-				D4EB4F382107707F00E1579D /* Info.plist */,
+				D4EB4F52210778CD00E1579D /* TipModel.swift */,
 			);
-			path = TipsycalcTests;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		D4EB4F402107707F00E1579D /* TipsycalcUITests */ = {
+		D4EB4F502107709800E1579D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D4EB4F412107707F00E1579D /* TipsycalcUITests.swift */,
-				D4EB4F432107707F00E1579D /* Info.plist */,
 			);
-			path = TipsycalcUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		D4EB4F51210770A700E1579D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4EB4F232107707E00E1579D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EB4F53210778CD00E1579D /* TipModel.swift in Sources */,
 				D4EB4F242107707E00E1579D /* ViewController.swift in Sources */,
 				D4EB4F222107707E00E1579D /* AppDelegate.swift in Sources */,
 			);
@@ -265,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4EB4F372107707F00E1579D /* TipsycalcTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4EB4F422107707F00E1579D /* TipsycalcUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,14 +433,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4DF96H2C3;
 				INFOPLIST_FILE = Tipsycalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.str.Tipsycalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uniqu.Tipsycalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,14 +452,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4DF96H2C3;
 				INFOPLIST_FILE = Tipsycalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.str.Tipsycalc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uniqu.Tipsycalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
